@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dz-link-shortener</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dz-Link Shortener</h1>
+    </header>
+
+    <div class="content">
+      <input type="text" id="input_text" placeholder="Enter your URL" />
+      <div class="loader">
+        <div class="loader-spinner"></div>
+      </div>
+      <button type="submit" id="btn">Shorten</button>
+      <div class="output">
+        <p id="output_text">shortened url</p>
+        <span class="copy-icon"><i class="fas fa-copy"></i></span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>
+        Made with <i class="fas fa-heart"></i> by
+        <a href="https://www.github.com/gauravsahdz" target="_blank"
+          >Gaurav Sah</a
+        >
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

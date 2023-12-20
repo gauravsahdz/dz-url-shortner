@@ -1,0 +1,151 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("https://s17233.pcdn.co/blog/wp-content/uploads/2017/08/Q119_Marketing_social_2_0124.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.content {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f1f7f4;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #9f9c9c;
+  font-size: 16px;
+  outline: none;
+  background-color: transparent;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.loader {
+  background-color: rgba(
+    51,
+    51,
+    51,
+    0.5
+  ); /* Semi-transparent black background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.loader-spinner {
+  border: 8px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.output {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #333;
+  text-align: center;
+}
+.copy-icon {
+  cursor: pointer;
+  margin-left: 8px;
+  color: #333;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Change color on hover */
+.copy-icon:hover {
+  color: #2980b9; /* Change the hover color as needed */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  p {
+    color: #fff;
+    margin: 0;
+    a {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    max-width: 300px;
+  }
+}
